@@ -1,0 +1,30 @@
+{
+  "name": "mywebsiteconstructor",
+  "version": "1.0.0",
+  "description": "pute javascript web site constructor",
+  "main": "index.js",
+  "scripts": {
+    "serve": "webpack-dev-server --mode development",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PRO94/myWebSiteConstructor.git"
+  },
+  "keywords": [
+    "js",
+    "javascript"
+  ],
+  "author": "Roman Prytulenko <roman.prytulenko@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PRO94/myWebSiteConstructor/issues"
+  },
+  "homepage": "https://github.com/PRO94/myWebSiteConstructor#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^4.3.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
