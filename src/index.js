@@ -1,3 +1,1 @@
-import './module.js'
-
-console.log('Index js ');
+import './styles/main.css'
