@@ -1,5 +1,6 @@
 import image from './assets/image.png'
-import {TextBlock, TitleBlock, ImageBlock, TextColumnsBlock} from './classes/blocks'
+import { TextBlock, TitleBlock, ImageBlock, TextColumnsBlock } from './classes/blocks'
+import { css } from './utils'
 
 const text = `
 More projects with JavaScript here: <a href="https://github.com/PRO94" target="_blank">Github</a>. Follow me!
@@ -8,10 +9,19 @@ More projects with JavaScript here: <a href="https://github.com/PRO94" target="_
 export const model = [
   new TitleBlock('Web site constructor with pure JavaScript!', {
     tag: 'h2',
-    styles: 'background: linear-gradient(to right, #ff0099, #493240);color: #fff;padding: 1.5rem;text-align: center;'
+    styles: css({
+      background: 'linear-gradient(to right, #22a605, #493240)',
+      color: '#fff',
+      padding: '1.5rem',
+      'text-align': 'center'
+    })
   }),
   new ImageBlock(image, {
-    styles: 'padding: 2rem 0;display: flex;justify-content: center;',
+    styles: css({
+      padding: '2rem 0',
+      display: 'flex',
+      'justify-content': 'center'
+    }),
     alt: 'my image',
     imageStyles: 'width: 500px; height: auto;'
   }),
@@ -20,9 +30,17 @@ export const model = [
     'Here is OOP and SOLID',
     'JavaScript - is simple and interesting!'
   ], {
-    styles: 'padding: 2rem 0; color: #fff;background: linear-gradient(to bottom, #8e2de2, #4a00e0);font-weight: bold;'
+    styles: css({
+      padding: '2rem 0',
+      color: '#fff',
+      background: 'linear-gradient(to bottom, #4a2e01, #23006b);font-weight: bold'
+    })
   }),
   new TextBlock(text, {
-    styles: 'background: linear-gradient(to left, #f2994a, #f2c94c);font-weight: bold;padding: 1rem;'
+    styles: css({
+      padding: '1rem',
+      color: '#fff',
+      background: 'linear-gradient(to bottom, #23006b, #dcf2f1);font-weight: bold'
+    })
   })
 ]
